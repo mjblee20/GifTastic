@@ -12,6 +12,7 @@ $("#add").on("click", function(event) {
 })
 
 $(document).on("click",".buttons", function(event) {
+    $("#gif-view").empty();
     console.log("fetching gifs");
     let category = this.id;
     let limit = 10;
