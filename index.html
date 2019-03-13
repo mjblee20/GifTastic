@@ -5,10 +5,10 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- jQuery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   </head>
   <body>
     <!-- navBar -->
@@ -29,16 +29,19 @@
     <!-- sideBar: where all the buttons of tags of user interest will be -->
     <div class="container">
         <div class="row">
-            <div class="col-3" id="sidebar">
+            <div class="jumbotron col-3" id="sidebar">
                 <div class="row" id="addButton">
                     <div class="col">
-                        <h3>Add an Interest</h3>
+                        <h4>Add an Interest</h4>
                         <input type="text" id="interest">
-                        <button type="submit" class="btn btn-primary" id="add">Submit</button>
+                        <button type="submit" class="btn btn-primary mt-3" id="add">Submit</button>
                     </div>
                 </div>
-                <div class="row" id="interests">
-                    <button class="buttons" id="cat">cat</button>
+                <hr>
+                <div class="row">
+                    <div class="col" id="interests">
+                        <button class="buttons btn btn-success" id="cat">cat</button>
+                    </div>
                 </div>
             </div>
             <!-- gifs from gif API will be generated in this div -->
